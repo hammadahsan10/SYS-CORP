@@ -1,0 +1,33 @@
+.syc__features-container__summary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.syc__features-container_summary-text {
+    flex: 2;
+    display: flex;
+}
+
+.syc__features-container_summary-text p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text);
+    text-align: justify;
+}
+@media screen and (max-width: 550px) {
+   
+    .syc__features-container_summary-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .syc__features-container__summary {
+        margin: 1rem 0;
+    }
+}

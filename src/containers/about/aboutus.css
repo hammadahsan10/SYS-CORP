@@ -1,0 +1,106 @@
+.syc__video {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+}
+
+.syc__novideo {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    background: none;
+}
+
+.syc__video-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 2rem;
+}
+
+.syc__video-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.video-controls {
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 22px 20px 22px 30px;
+    margin-top: 10px;
+}
+
+.splash-screen {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: -30px auto 60px auto;
+}
+
+.splash-screen div:hover {
+    cursor: pointer;
+}
+
+.section__margin-for-video {
+    border-radius: 50px 0px 50px 0px;
+    margin: 6rem 6rem;
+}
+
+@media screen and (max-width: 800px) {
+
+    .section__margin-for-video {
+        margin: 2rem;
+    }
+
+    .syc__video {
+        padding: 1rem;
+    }
+    .syc__novideo {
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .section__margin-for-video {
+        margin: 0rem;
+    }
+
+    .syc__video {
+        padding: 0rem;
+    }
+
+    .syc__novideo {
+        padding: 0rem;
+    }
+
+    .syc__video-heading h1 
+    {
+        margin-left: 20px;
+        font-size: 28px;
+    }
+}

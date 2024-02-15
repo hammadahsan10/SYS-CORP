@@ -1,0 +1,134 @@
+.syc__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.logo-style
+{
+    height: 70px !important;
+    width: 70px !important;
+}
+
+.syc__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.syc__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.syc__navbar-links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.syc__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.syc__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.syc__navbar-links_container p,
+.syc__navbar-menu_container p {
+    background: linear-gradient(103.22deg, rgb(255, 191, 0) -13.86%, rgb(202, 114, 7) 99.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 0.7rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+a:hover {
+    background: rgb(253, 188, 103);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.syc__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.syc__navbar-menu svg {
+    cursor: pointer;
+}
+
+.syc__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.syc__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.syc__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .syc__navbar-links_container {
+        display: none;
+    }
+
+    .syc__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .syc__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .syc__navbar {
+        padding: 2rem;
+    }
+
+    .syc__navbar-sign {
+        display: none;
+    }
+
+    .syc__navbar-menu_container {
+        top: 20px;
+    }
+
+    .syc__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
