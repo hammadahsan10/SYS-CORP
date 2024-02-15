@@ -1,0 +1,170 @@
+.syc__future {
+    display: flex;
+    flex-direction: column;
+    transition: border-radius 0.6s ease-in-out;
+    padding: 2rem;
+    background: var(--color-footer);
+    border-radius: 0px 64px 0px 64px !important;
+
+       /* ff 3.6+ */
+       background:-moz-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+
+       /* safari 5.1+,chrome 10+ */
+       background:-webkit-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+   
+       /* opera 11.10+ */
+       background:-o-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+   
+       /* ie 10+ */
+       background:-ms-radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+   
+       /* global 92%+ browsers support */
+       background: radial-gradient(circle at 30% -100%, #4b0101 25%, #340202 85%, #360000 100%);
+
+}
+
+.syc__future:hover {
+
+    border-radius: 64px 0px 64px 0px !important;
+    box-shadow: 8px 8px 10px #270000;
+    animation-name: subtleFlip;
+    animation-duration: 1s;
+    cursor: pointer;
+    animation-timing-function: ease-in-out;
+    background: radial-gradient(circle at 30% -100%, #680303 25%, #270000 85%, #680303 100%);
+}
+
+@keyframes subtleFlip {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    50% {
+        transform: perspective(1000px) rotateY(10deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+}
+
+.syc__future-feature {
+    display: flex;
+}
+
+/* Customizing feature component as per needs */
+.syc__future-feature .syc__features-container__feature {
+    margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.syc__future-feature .syc__features-container_feature-text {
+    max-width: 700px;
+}
+
+.syc__future-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1rem;
+}
+
+.syc__future-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.syc__future-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.syc__future-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.syc__future-container .syc__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.syc__future-container .syc__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+.syc__features-container_future-text {
+    flex: 2;
+    display: flex;
+}
+
+.syc__features-container_future-text p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text);
+    text-align: justify;
+}
+@media screen and (max-width: 550px) {
+   
+    .syc__features-container_future-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .syc__features-container__future {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .syc__future-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .syc__future-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .syc__future-feature .syc__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .syc__future-feature .syc__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .syc__future-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .syc__future-container .syc__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

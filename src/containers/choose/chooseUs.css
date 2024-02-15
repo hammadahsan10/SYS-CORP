@@ -1,0 +1,140 @@
+.syc__choose {
+    padding-bottom: 4rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-chooseUs);
+}
+
+.choose__padding {
+    padding: 2rem 6rem;
+}
+
+.syc__choose-heading {
+    width: 100%;
+    text-align: center !important;
+    padding: 1rem;
+}
+
+.syc__choose-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center !important;
+}
+
+.syc__choose-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+}
+
+.syc__choose-links img {
+    width: 100%;
+}
+
+.reduced-width {
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.syc__choose-links div {
+    margin: 1rem 0px;
+}
+
+.card {
+    width: 100%;
+    background: linear-gradient(103.22deg, #5f0202 -13.86%, #270000 99.55%);
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    color: white;
+    transform: perspective(1000px) rotateY(20deg);
+}
+
+.card:hover {
+    background: linear-gradient(103.22deg, #5f0202 -13.86%, #5f0202 99.55%);
+    transform: scale(1.05) perspective(1000px) rotateY(0deg);
+    /* Hover effect to straighten */
+    cursor: pointer;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-family: sans-serif;
+    background: var(--gradient-text);
+    background-clip: text;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 1050px) {
+    .choose__padding {
+        padding: 0rem;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .syc__choose-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .choose__padding {
+        padding: 0rem 6rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .choose__padding {
+        padding: 0rem 3rem;
+    }
+
+    .syc__choose-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .syc__choose-links div {
+        margin: 1rem 0;
+    }
+
+    .card {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .syc__choose-heading h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+
+    .card {
+        font-size: 12px;
+    }
+    .choose__padding {
+        padding: 0rem 2rem;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    .syc__choose {
+        width: 103%;
+    }
+}
+
